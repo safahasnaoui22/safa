@@ -1,0 +1,131 @@
+.skills {
+  text-align: center;
+
+  .head-text {
+    text-align: center;
+    color: #E0B69E;
+    letter-spacing: 3px;
+    padding: 1rem;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 4px;
+      width: 100px;
+      background: linear-gradient(90deg, #42312B 0% , #E0B69E 100%);
+  border-radius: 2px;
+    }
+    @media (max-width: 768px) {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .app__skills-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px; /* Add padding for better spacing */
+
+    @media (max-width: 768px) {
+      padding: 10px;
+    }
+  }
+
+  .app__skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center; /* Center items */
+    padding: 1rem;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      gap: 10px;
+    }
+  }
+
+  .app__skills-item {
+    
+    width: 250px;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+    @media (max-width: 768px) {
+      width: calc(50% - 20px); 
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &__flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    div {
+      height: 80px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      overflow: hidden;
+
+     .image {
+        max-width: 100%;
+        max-height: 100%;
+        position :  relative ;
+        border-radius : 50px ;
+        background-color : #fff ;
+        display: flex;
+        justify-content : center ;
+        align-items : center ;
+        transition: 0.5s;
+        &::after{
+          content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 45px 0 0 45px;
+        }
+      }
+    }
+.p-name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  font-weight: bold;
+ 
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    
+    width: 35px;
+    height: 4px;
+    border-radius: 0 2px 2px 0 ;
+    background: linear-gradient(90deg, #42312B 0% , #E0B69E 100%);
+  }
+}
+    .p-text {
+      margin-top: 10px;
+      color: #42312B; 
+
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.social-media-icons {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+  
+    
+   
+  }
+  
+  .social-media-icons  {
+   
+    font-size: 40px; 
+  }
+
+  .facebook{
+    color: blue;
+  }
+ #pFac{
+   
+    font-size: 12px;
+    display: none;
+ }
+ .facebook:hover #pFac {
+    display: flex;
+    color: black;
+    font-size: 15px;
+  }
+
+  .github{
+    color: #000;
+  }
+  .pgit{
+    font-size: 12px;
+    display: none;
+  }
+  .github:hover .pgit{
+    display: flex;
+    color: black;
+    font-size: 15px;
+  }
+  .whats{
+    color: #25d366;
+  
+  }
+  .whats:hover .pwha{
+    display: flex;
+    color: black;
+    font-size: 15px;
+  }
+  .pwha{
+    font-size: 12px;
+    display: none;
+  }
+  .whats:hover .pwha{
+    display: flex;
+    color: black;
+    font-size: 15px;
+  }
+  .linked{
+    color: #0077b5;
+}
+.plink{
+    font-size: 12px;
+    display: none;
+}
+.linked:hover .plink{
+    display: flex;
+    color: black;
+    font-size: 15px;
+}

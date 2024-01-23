@@ -1,0 +1,167 @@
+.content{
+    font-size: 40px;
+    text-align: center;
+    color: #E0B69E;
+    letter-spacing: 3px;
+    padding: 1rem;
+  position: relative;
+}
+.content::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 400px;
+    background: linear-gradient(90deg, #42312B 0% , #E0B69E 100%);
+border-radius: 2px;
+}
+span{
+    color: #74574c;
+  }
+
+
+
+.contact .content {
+  padding: 0;
+  margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.container{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+margin-right: 200px;
+}
+.container .contactInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #E0B69E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 20px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactForm {
+   
+  
+    width: 100%;
+    padding: 40px;
+    background: rgb(248, 243, 243);
+   
+
+   border: 5px solid rgba(255 , 255 , 255 , 0.18);
+   box-shadow: 8px 4px 8px 4px rgba(0, 0, 0, 0.5);
+   transition: transform 0.3s ease-in-out;
+    border-radius: 40px;
+}
+.contactForm:hover {
+    transform: scale(1.05);
+    letter-spacing: 2px;
+  }
+.contactForm h2 {
+    font-size: 30px;
+    color: #74574c;
+    font-weight: 500;
+   margin-bottom: 40px;
+   margin-left: 80px;
+   
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox input textarea {
+  
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    resize: none;
+}
+
+
+.btn {
+    text-align: center;
+    font-size: 18px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E0B69E;
+    background: linear-gradient(90deg, #42312B 0% , #E0B69E 100%);
+    padding: 10px 20px ; 
+    border: none;
+    outline: 1.5px solid transparent;
+   margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    margin-left: 100px;
+    width: 200px;
+}
+.btn:hover {
+    color: #42312B;
+    background: linear-gradient(90deg, #E0B69E 0% , #42312B 100%);
+ 
+    outline: 1.5px solid #c1d1d1;
+}
+@media screen and (max-width: 991px) {
+   .contact{
+   
+    width: 100%;
+   
+   }
+  
+    .container {
+      flex-direction: column;
+     margin-top: 40px;
+      
+     
+    }
+  .contactForm {
+    margin-top: 40px;
+    width: 400px;
+    
+  }
+ 
+   .inputBox {
+    width: 100%;
+    
+    
+
+  }
+
+  }

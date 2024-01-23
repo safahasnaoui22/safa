@@ -1,0 +1,24 @@
+.custom-link {
+    font-size: 18px;
+    text-align: center;
+    color: #42312B;
+    letter-spacing: 3px;
+    padding: 1rem;
+  position: relative;
+  font-weight: bold;
+  text-decoration: none;
+  }
+  .custom-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 120px;
+    background: linear-gradient(90deg, #42312B 0% , #E0B69E 100%);
+
+}
+  .custom-link:hover {
+    color: #E0B69E;
+  }
